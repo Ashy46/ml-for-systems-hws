@@ -1,0 +1,7 @@
+scapy
+# pandas 3 can't read video_dataset.pkl.xz (legacy Python 2 pickle); 2.x can.
+pandas<3
+numpy
+scikit-learn
+matplotlib
+jupyter

@@ -1,0 +1,13 @@
+# Python / Jupyter
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.venv/
+
+# macOS
+.DS_Store
+
+# Uncompressed datasets (>50 MB). Keep the .pkl.xz versions in git.
+# netflix_session.pkl is small and stays tracked.
+assignment-*/data/video_dataset.pkl
+assignment-*/data/netflix_dataset.pkl
