@@ -1,0 +1,24 @@
+question,part,kind,points,max,transcript,ocr_read,key,comment,graded_from
+1,1,choice,3,3,,ACE,ACE,,image analysis
+2,2,choice,1.25,2,,AE,ACE,,image analysis
+3,3,free,2.5,3,"Look at domain registration related to UChicago and measure network traffic from them. I would train on how many emails were sent from the same source, and how frequently they come, # recipients","Look at del daman restate nolutento chicago sent Fron th some souse, and rau Frequent's thy come, recipients",,"Registration related to UChicago, sender source, recipients; source somewhat unclear.",image
+4,4a,yes_no,1,1,,no,no,,image analysis
+4,4b,free,1.5,2,It is a spurious feature. You could get an attack during the day and completely miss it.,It is a spurian feature. You orld it on dich dwig th day and completely mssit.,,"Spurious feature, would miss attacks at other times; no better features.",image
+5,5,choice,2,3,,AC,ACE,,image analysis
+6,6a,yes_no,1,1,,no,no,,image analysis
+6,6b,free,0.5,2,Likely that it is a temporary boost state. Zoom servers or internet could have been more busy 30 mins ago.,Likely trit it is a temparare poststate Loom SOr - or internet could hau been man Duşg oins ago. pion,,"Transient only; missing server path, Wi-Fi, passive data.",image
+7,7,free,2,3,"a) Src/Dst IP, Src/Dst port and protocol. You had to leave out dst port because it could vary a ton and create inaccurate flows.
+b) It would not because, generally, groups flows on a 30s window.","protocal. You rod, to a) orc/Dst IP, Sic/Dst port erd. a out dst fat herause it coul vora ten ord creute naccurate",,Wrongly omitted destination port; fields listed.,image
+8,8,free,4,4,"With STATS, you are more likely to get features that matter to the objective due to common knowledge. However, you lose byte level granularity. With nPrint, you can learn much more detail through log fes BUT you could learn spurious features.","It to seeds 24 we gonerlay. with nant, ya can lian much man deter Wrough log fes BUT you suld lean spurious Realers",,Full credit,image
+9,9,choice,2,2,,ACE,ACE,,image analysis
+10,10,free,1,3,"This is fine when your dataset has only a couple missing and its not a metric your trying to predict. If its something you are trying to predict, its a really bad idea.","The do fi uhn your barget is an o souple mie god itsnd amelie youn If its someting you or tying. predict, itsa really bad idea",,Target-variable reasoning only; no network example or anomaly signal.,image
+11,11a,yes_no,1,1,,no,no,,image analysis
+11,11b,free,0.5,2,You could have gotten lucky with the split and training data represent test well but doesn't imply it will do well in production,Mean cause be alim luce it bino one in paddlen,,"partial credit, reviewed Nov 1: says it does not carry over to production",image
+12,12,free,4.5,5,"a) accuracy = 980/1000 = 98%. Precision = 15/30 = 50% Recall = 75% b) 98%. When attacks are rare, you want to use precision vs Recall graph","a) accuray: 980/1000m: 08961. Precis = 15/30=50% Real= 75% b): 98%. It whe attacks are rare, you want tous precision us Rees Recallgrapho: [outside box] True atack Predicted lack Predied benign",,Correct PR curve; weak explanation of why accuracy misleads.,image
+13,13,free,3,3,"a) A   c) You could stop training early or go get data.
+b) C",a A i you could stop training early or go get data. 5) 6,,Full credit,image
+14,14,free,2,3,"You essentially check to see if there are bursts of small upstream requests and bursts of large downstream responses. b) they carry inform. because they contain bytes that make up the video, hence relate to video resolution. Needs to inform player what resolution to use","You essertiall chect do see if the on bursts of gmall upstorem requestsad bursto donge daunsire sponse, b) fu con irfanat. heccuse thy conten bytes that mah ip th victo, hence relate tovidho resution. Needstonfom player whal resolutes to ve",,Lacks gaps/zero-byte markers; no multiple-bitrate explanation.,image
+15,15,free,3.5,4,a) The model probably learned features related to specific household rather than actual network features. b) 30% accuracy is a better measure. One change we could do is drop home id and other non related information.,(Answer inside the box) a) Th modie probably learned Feater ribaliedt specific househad 80% accuran is ahuter meer that Ono chen leculd do is dray ham id and collis non riläted infamilian,,Lacks random-split explanation of same households in train and test.,image
+16,16a,short,0.5,0.5,,,,completion credit,
+16,16b,short,0.5,0.5,,,,completion credit,
+16,16c,free,2,2,Make boxes bigger PLEASE More time for hands on. Delay non-related guys to after classroom,Make bose boxes Digger PLEASE Mor time for hands on. Dely non-nolatad gus to after classarot,,completion credit,
