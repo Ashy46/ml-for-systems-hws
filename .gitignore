@@ -11,3 +11,6 @@ __pycache__/
 # netflix_session.pkl is small and stays tracked.
 assignment-*/data/video_dataset.pkl
 assignment-*/data/netflix_dataset.pkl
+
+# Assignment 3 packet captures (rubric: do not commit pcaps; largest is ~74 MB)
+assignment-3/data/**/*.pcap
